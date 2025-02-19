@@ -1,6 +1,6 @@
 import Admin from "../models/admin.model.js";
 import generateTokenAndSetCookie from "../utils/generateToken.js";
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 export const login = async (req,res)=>{
   try {
