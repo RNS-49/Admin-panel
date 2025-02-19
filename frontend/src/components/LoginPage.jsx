@@ -20,7 +20,7 @@ function Login() {
     e.preventDefault()
     
      try {
-      const response = await axios.post("http://localhost:5000/api/auth/login",admin);
+      const response = await axios.post("https://admin-panel-shx8.onrender.com",admin);
       console.log(response);
 
       if(response.status === 201){
