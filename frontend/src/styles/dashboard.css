@@ -1,0 +1,412 @@
+/* ------ Styling Main Dashboard -------- */
+
+body {
+  background-color:whitesmoke;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.user-icon{
+ width: 50%;
+ border-radius: 50%;
+ margin-right: -450px;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.navbar {
+  background:red;
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(34, 34, 34),-2px -2px 5px rgb(251, 246, 246);
+}
+
+.stats-card {
+  background:red;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 5px rgb(26, 25, 25),-2px -2px 5px rgb(244, 238, 244);
+  transition: transform 0.3s;
+}
+
+.stats-card:hover {
+  transform: scale(0.9);
+}
+
+.chart-card {
+  background: red;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  height: 91.5vh;
+  text-align: center;
+}
+
+
+.sales-card {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  background: red;
+  padding: 20px;
+  border-radius: 10px;
+  height: 45vh;
+}
+
+.list-group{
+  display: flex;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888#f1f1f1;
+}
+
+.list-group-item {
+  color: black;
+  border: none;
+  margin: 5px 0;
+  border-radius: 5px;
+
+}
+
+.list-group-item:hover{
+  background-color: #9a9797;
+}
+
+
+
+
+
+/* ------Customizing the calendar------- */
+
+
+
+.calendar-container {
+  width: 100%; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background:red;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 0.85rem; 
+  margin-top: 20px;
+}
+
+
+.small-calendar {
+  width: 100%;
+  scale: 0.8; 
+}
+
+.small-calendar .react-calendar__tile {
+  background-color: white;
+  padding: 10px; 
+  font-size: 0.75rem; 
+  border-radius: 10px;
+  color: black;
+}
+
+.small-calendar .react-calendar__tile:hover {
+  background-color: #7e7d7d;
+}
+
+.small-calendar .react-calendar__tile--now {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.small-calendar .react-calendar__tile--active {
+  background-color: #646363;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+}
+
+.calendar-container h5{
+  color: white;
+  padding: 10px;
+}
+
+.selected-date{
+  color: black;
+
+}
+
+
+.user-profiles-container {
+  padding: 20px;
+  background: red;
+  border-radius: 10px;
+  min-height: 60vh;
+}
+
+.user-profiles-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.user-table th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+.user-table tr:hover {
+  background: #f9f9f9;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.processing {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Optimizing for Mobiles */
+
+
+@media(max-width:600px){
+  .dashboard {
+    padding: 10px;
+  }
+  
+  .navbar {
+    background:red;
+    padding: 10px;
+
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .stats-card {
+    margin-top: 10px;
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgb(26, 25, 25),-2px -2px 5px rgb(244, 238, 244);
+    color: white;
+  }
+  
+  .chart-card {
+    background:red;
+    padding: 20px;
+    border-radius: 10px;
+    height: 40vh;
+  }
+  
+  .sales-card {
+    margin-top: 10px;
+    background:red;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .list-group-item {
+    background: white;
+    color: black;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+
+  .user-profiles-container {
+    padding: 20px;
+    background: red;
+    border-radius: 10px;
+    min-height: 60vh;
+  }
+  
+  .user-profiles-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  table{
+    font-size: 6px;
+  }
+
+  .user-table th {
+    background: #f0f0f0;
+    font-weight: bold;
+  }
+  
+
+  .user-table tr:hover {
+    background: #f9f9f9;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  
+  .success {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .processing {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  .failed {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+
+/* -------Optimizing for tablet-------- */
+
+@media(width:768px){
+  .dashboard {
+    padding: 10px;
+  }
+  
+  .navbar {
+    background:red;
+    padding: 10px;
+
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .stats-card {
+    margin-top: 10px;
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgb(26, 25, 25),-2px -2px 5px rgb(244, 238, 244);
+    color: white;
+  }
+  
+  .chart-card {
+    background:red;
+    padding: 20px;
+    border-radius: 10px;
+    height: 50vh;
+  }
+  
+  .sales-card {
+    margin-top: 10px;
+    background:red;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .list-group-item {
+    background: white;
+    color: black;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+
+  .user-profiles-container {
+    padding: 20px;
+    background: red;
+    border-radius: 10px;
+    min-height: 50vh;
+  }
+  
+  .user-profiles-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .user-table th {
+    background: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .user-table tr:hover {
+    background: #f9f9f9;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  
+  .success {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .processing {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  .failed {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
