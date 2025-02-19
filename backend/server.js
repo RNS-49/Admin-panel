@@ -5,15 +5,18 @@ import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.routes.js";
 import connectToMongoDB from "./database/connectTodatabse.js";
 
+dotenv.config();
 
 const app = express();
 
 app.use(cors({
   origin:'https://admin-panel-teal-two.vercel.app',
-  credentials:true
+  credentials:true,
+  methods:["GET","POST","PUT","DELETE"],
+  allowedHeaders:["Content-Type","Authorization"]
 }));
 
-dotenv.config();
+
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
