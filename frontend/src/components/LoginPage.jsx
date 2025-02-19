@@ -1,4 +1,4 @@
-import React from 'react'
+/import React from 'react'
 import { useState } from 'react'
 import "../styles/login.css"
 import axios from 'axios'
@@ -20,7 +20,7 @@ function Login() {
     e.preventDefault()
     
      try {
-      const response = await axios.post("https://admin-panel-shx8.onrender.com",admin);
+      const response = await axios.post("https://admin-panel-shx8.onrender.com/api/auth/login",admin);
       console.log(response);
 
       if(response.status === 201){
