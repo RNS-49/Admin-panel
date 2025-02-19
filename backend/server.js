@@ -9,7 +9,7 @@ import connectToMongoDB from "./database/connectTodatabse.js";
 const app = express();
 
 app.use(cors({
-  origin:'https://admin-panel-teal-two.vercel.app/',
+  origin:'https://admin-panel-teal-two.vercel.app',
   credentials:true
 }));
 
