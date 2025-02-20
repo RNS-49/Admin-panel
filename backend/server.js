@@ -10,10 +10,8 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin:'https://admin-panel-teal-two.vercel.app',
-  credentials:true,
-  methods:["GET","POST","PUT","DELETE"],
-  allowedHeaders:["Content-Type","Authorization"]
+  origin:'*',
+  methods:"GET","POST","PUT","DELETE"
 }));
 
 
