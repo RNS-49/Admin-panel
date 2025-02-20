@@ -1,5 +1,4 @@
 import Admin from "../models/admin.model.js";
-import generateTokenAndSetCookie from "../utils/generateToken.js";
 import bcrypt from 'bcryptjs';
 
 export const login = async (req,res)=>{
@@ -17,7 +16,6 @@ export const login = async (req,res)=>{
     return res.status(400).json({error:"Inavlid username or password"});
    }
 
-    generateTokenAndSetCookie(admin._id,res);
 
     res.status(200).json({
       _id:admin._id,
